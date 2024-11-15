@@ -1,17 +1,94 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
- <title>404 Error - Page Not Found</title>
- <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login/Sign-in</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ADD8E6; /* Light blue background */
+        }
+        
+        .container {
+            max-width: 400px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #F7F7F7; /* Soft gray container */
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        .login-signup {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        .login, .signup {
+            width: 100%;
+            padding: 20px;
+        }
+        
+        .login {
+            background-color: #C9E4CA; /* Soft green login form */
+            border-radius: 10px 10px 0 0;
+        }
+        
+        .signup {
+            background-color: #FFD7BE; /* Soft orange signup form */
+            border-radius: 0 0 10px 10px;
+        }
+        
+        h2 {
+            color: #455A64; /* Soft blue heading */
+        }
+        
+        input[type="email"], input[type="password"], input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #CCC; /* Soft gray border */
+            border-radius: 5px;
+            background-color: #F7F7F7; /* Soft gray input field */
+        }
+        
+        button[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: #66CCCC; /* Soft blue submit button */
+            color: #fff;
+            cursor: pointer;
+        }
+        
+        button[type="submit"]:hover {
+            background-color: #337AB7; /* Darker blue on hover */
+        }
+    </style>
 </head>
 <body>
- <div class="error-container">
-  <h1>404</h1>
-  <h2>Page Not Found</h2>
-  <p>The requested URL was not found on this server.</p>
-  <a href="#" class="back-button">Back to Home</a>
- </div>
+    <div class="container">
+        <div class="login-signup">
+            <div class="login">
+                <h2>Login</h2>
+                <form>
+                    <input type="email" placeholder="Email" required>
+                    <input type="password" placeholder="Password" required>
+                    <button type="submit">Login</button>
+                </form>
+            </div>
+            <div class="signup">
+                <h2>Sign-up</h2>
+                <form>
+                    <input type="email" placeholder="Email" required>
+                    <input type="password" placeholder="Password" required>
+                    <input type="text" placeholder="Name" required>
+                    <button type="submit">Sign-up</button>
+                </form>
+            </div>
+        </div>
+    </div>
 </body>
- <body bgcolour="red">
- </body> hi this is Jack I made this 4 learning 
 </html>
